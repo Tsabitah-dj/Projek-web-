@@ -7,6 +7,9 @@ use App\Http\Controllers\SessionController; // Updated to follow naming conventi
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\PengirimanController;
 use App\Http\Controllers\TransportasiController;
+use App\Http\Controllers\LayananController;
+use App\Http\Controllers\lacakController;
+use App\Http\Controllers\TentangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,11 +24,14 @@ use App\Http\Controllers\TransportasiController;
 
 Route::get('/', function () {
     return view('Dashboard');
-});
+})->name('Dashboard');
 
-Route::get('/admin/layouts', [Admincontroller::class, 'showLayouts']);
+route::resource('Layanan', LayananController::class);
+route::resource('lacak', lacakController::class);
+route::resource('tentang', TentangController::class);
 
 // Admin Dashboard Routes
+Route::get('/admin/layouts', [Admincontroller::class, 'showLayouts']);
 
 Route::prefix('admin')->middleware('iniAdmin')->group(function() {
     Route::get('sesi', [Admincontroller::class, 'showSesi'])->name('sesi.index');

@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="cs-sidebar-middle-area">
-        <p>Merak,Banten, Indonesia</p>
+        <p>Web Pengiriman Barang</p>
         <div class="cs-sidebar-emai-phone">
           <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
           <a href="#" class="cs-text-style-h6">info@email.com</a>
