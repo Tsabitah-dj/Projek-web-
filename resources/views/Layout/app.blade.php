@@ -140,8 +140,7 @@
                 </div>
               </div>
               <div class="cs-exp-text">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing el random text, It has roots in a piece of classic.</p>
               </div>
             </div>
             <div class="cs-expert-line"></div>
@@ -158,8 +157,7 @@
                 </div>
               </div>
               <div class="cs-exp-text">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                  classic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing el random text, It has roots in a piece of classic.</p>
               </div>
            
              
@@ -189,11 +187,8 @@
                 </div>
                 <div class="cs-about-img-over-content anim_div_ShowRightSide" data-src="assets/img/experience-bg.svg">
                   <div class="cs-flex">
-                    <h2 id="count5" class="amin_auto_count">18
-                    </h2>
-                    <span class="cs-text-style-h2 cs-color-white">+</span>
                   </div>
-                  <p>Years Of <br> Experience</p>
+                 
                 </div>
               </div>
             </div>
@@ -201,41 +196,10 @@
               <div class="cs-about-content-wrap">
                 <div class="cs-about-content-in">
                   <div class="cs-about-title">
-                    <h2 class="logi-splite">Drive Your Business Forward with LogiHub</h2>
+                    <h2 class="logi-splite">Selamat Datang Di Web Pengiriman Barang</h2>
                   </div>
                   <div class="cs-about-para">
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                  </div>
-                  <div class="cs-about-list-wrap">
-                    <ul>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Freight Forwarding
-                      </li>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Warehousing & Delivery
-                      </li>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Customs Clearance
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Warehousing & Delivery
-                      </li>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Customs Clearance
-                      </li>
-                      <li>
-                        <i class="flaticon-verified"></i>
-                        Freight Forwarding
-                      </li>
-                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero fuga fugit, sint sequi, laborum officia hic quae earum neque illo natus repellendus fugiat quidem. Architecto recusandae pariatur sed doloremque.</p>
                   </div>
                   <div class="cs-primary-btn-wrap">
                     <div class="cs-primary-btn">

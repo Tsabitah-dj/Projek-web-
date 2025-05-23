@@ -15,12 +15,19 @@ class IniAdmin
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response
-
     {
-        if(Auth::check())
-        {
-            return $next($request);
+        if (Auth::check()) {
+            $user = Auth::user();
+            // Define admin emails or criteria here
+            $adminEmails = [
+                'admin@example.com', // replace with actual admin email(s)
+            ];
+            if (in_array($user->email, $adminEmails)) {
+                return $next($request);
+            } else {
+                return redirect('/')->withErrors('Anda tidak memiliki akses ke halaman ini.');
+            }
         }
-        return redirect('sesi')->withErrors('Masukan Username dan Password yang benar');
+        return redirect('sesi')->withErrors('Silahkan Masukan Username Dan Password Yang Benar');
     }
 }

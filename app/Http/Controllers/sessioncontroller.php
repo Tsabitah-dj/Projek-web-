@@ -44,7 +44,7 @@ class SessionController extends Controller
         ];
 
         if (Auth::attempt($infologin)){
-            return redirect()->with('success', 'Berhasil Login');
+            return redirect('/admin/layouts')->with('success', 'Berhasil Login');
         } else {
             return redirect('/admin/layouts')->with('error', 'Username dan password tidak valid');
         }

@@ -13,34 +13,8 @@
       </div>
       <div class="cs-sidebar-middle-area">
         <p>Web Pengiriman Barang</p>
-        <div class="cs-sidebar-emai-phone">
-          <a href="#" class="cs-text-style-h6">+1-416-8241228</a>
-          <a href="#" class="cs-text-style-h6">info@email.com</a>
-        </div>
-        <div class="cs-common-icon-style cs-sidebar-social">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="flaticon-facebook-app-symbol"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="flaticon-linkedin-big-logo"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="flaticon-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="flaticon-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        
+        
       </div>
     
             <span class="svg-left-to-right-animation">

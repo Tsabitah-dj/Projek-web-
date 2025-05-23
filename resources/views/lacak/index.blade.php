@@ -31,5 +31,45 @@
   <!-- End Sidebar -->
 
  <!-- Halaman Cek Pesanan -->
+    <section>
+        <div class="container my-5">
+            <h3>Data Pesanan</h3>
+            <a href="{{route('pesanan.index')}}" class="btn btn-success mb-3">Tambah Pesanan</a>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nama Barang</th>
+                        <th>Ukuran Barang</th>
+                        <th>Layanan ID</th>
+                        <th>Alamat</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse($pesanan as $item)
+                    <tr>
+                        <td>{{ $item->nama_barang }}</td>
+                        <td>{{ $item->Ukuran }}</td>
+                        <td>{{ $item->layanan_id }}</td>
+                        <td>{{ $item->alamat }}</td>
+                        <td>
+                            <a href="{{ route('lacak.edit', $item->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                            <form action="{{ route('lacak.destroy', $item->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    @empty
+                    <tr>
+                        <td colspan="7" class="text-center">Nada Belum Membuat Pesanan</td>
+                    </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+    </section>
+  <!-- Akhir Halaman -->
 
 </body>

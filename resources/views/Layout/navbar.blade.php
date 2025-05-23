@@ -33,21 +33,8 @@
                 <ul class="cs_nav_list">
                   <li class="menu-item-has-children">
                     <a href="{{route('Dashboard')}}" class="cs-text_b_line"
-                      ><span>Pesan</span></a
-                    >
-                    <ul>
-                      <li>
-                        <a href="index-2.html" class="cs-text_b_line"
-                          ><span>Pick Up</span></a
-                        >
-                      </li>
-                      <li>
-                        <a href="ocean-cargo.html" class="cs-text_b_line"
-                          ><span>Drop Off</span></a
-                        >
-                      </li>
-                      
-                    </ul>
+                      ><span>Pesan</span></a>
+                   
                     <span class="cs_munu_dropdown_toggle"></span>
                   </li>
                   <li class="menu-item-has-children">
@@ -55,7 +42,7 @@
                     <ul>
                       <li>
                         <a href="{{route('lacak.index')}}" class="cs-text_b_line"
-                          ><span>Cek Lokasi Pesanan</span></a>
+                          ><span>Cek Pesanan</span></a>
                       </li>
                     </ul>
                     <span class="cs_munu_dropdown_toggle"></span>
@@ -93,9 +80,24 @@
                 </ul>
               </div>
             </div>
-            <!-- End Main Header Middle Area -->
-
-            <!-- Start Main Header Right Area -->
+             <!-- Start Main Header Right Area -->
+            <div class="cs_main_header_right">
+              <div class="cs-header-additional-item">
+                <a href="{{route('pesanan.index')}}"
+                  ><span class="cs_accent_color">+</span>Buat Pesanan</a>
+              </div>
+              <div class="cs_toolbox">
+                <span class="cs_icon_btn">
+                  <span class="cs_icon_btn_in">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <!-- End Main Header Right Area -->
            
       <!-- Header Email Phone -->
     </header>

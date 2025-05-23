@@ -10,6 +10,7 @@ use App\Http\Controllers\TransportasiController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\lacakController;
 use App\Http\Controllers\TentangController;
+use App\Http\Controllers\PesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,11 +30,12 @@ Route::get('/', function () {
 route::resource('Layanan', LayananController::class);
 route::resource('lacak', lacakController::class);
 route::resource('tentang', TentangController::class);
+Route::resource('pesanan', PesananController::class);
 
 // Admin Dashboard Routes
 Route::get('/admin/layouts', [Admincontroller::class, 'showLayouts']);
 
-Route::prefix('admin')->middleware('iniAdmin')->group(function() {
+Route::prefix('admin')->group(function() {
     Route::get('sesi', [Admincontroller::class, 'showSesi'])->name('sesi.index');
     Route::get('karyawan', [Admincontroller::class, 'showKaryawan'])->name('karyawan.index');
     Route::get('pengiriman', [Admincontroller::class, 'showPengiriman'])->name('pengiriman.index');

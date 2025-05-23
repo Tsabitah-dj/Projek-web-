@@ -44,45 +44,47 @@
                                 Data Pengiriman
                             </div>
                             <div class="card-body">
-   <table id="datatablesSimple">
     <a class="btn btn-primary mb-3" href="{{ route('pengiriman.create') }}">Tambah Data</a>
     <div class="table-responsive">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Username</th>
-                <th>Nama Barang</th>
-                <th>Jumlah barang</th>
-                <th>Alamat</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            @php $no = 1 @endphp
-            @foreach($pengiriman as $pengiriman)
+        <table id="datatablesSimple" class="table table-bordered">
+            <thead>
                 <tr>
-                    <td>{{ $no++ }}</td>
-                    <td>{{ $pengiriman->username}}</td>
-                    <td>{{ $pengiriman->barang->nama_barang }}</td>
-                    <td>{{ $pengiriman->jumlah }}</td>
-                    <td>{{ $pengiriman->alamat }}</td>
-                    <td>
-                        <a class="btn btn-sm btn-success" href="{{ route('pengiriman.show', $pengiriman->id) }}">Review</a>
-                        <a class="btn btn-sm btn-primary" href="{{ route('pengiriman.edit', $pengiriman->id) }}">Edit</a>
-                        <form action="{{ route('pengiriman.destroy', $pengiriman->id) }}" method="POST" style="display: inline-block">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
-                        </form>
-                    </td>
+                    <th>No</th>
+                    <th>Username</th>
+                    <th>Nama Barang</th>
+                    <th>Nomer Telepon</th>
+                    <th>Ukuran Barang</th>
+                    <th>Layanan Yang Dipilih</th>
+                    <th>Alamat</th>
+                    <th>Aksi</th>
                 </tr>
-            @endforeach
-        </tbody>
+            </thead>
+            <tbody>
+                @php $no = 1 @endphp
+                @foreach($pengiriman as $pengiriman)
+                    <tr>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $pengiriman->username }}</td>
+                        <td>{{ $pengiriman->barang?->nama_barang ?? 'Barang tidak tersedia' }}</td>
+                        <td>{{ $pengiriman->nomor_telepon ?? '-' }}</td>
+                        <td>{{ $pengiriman->ukuran_barang ?? '-' }}</td>
+                        <td>{{ $pengiriman->layanan ?? '-' }}</td>
+                        <td>{{ $pengiriman->alamat }}</td>
+                        <td>
+                            <a class="btn btn-sm btn-success" href="{{ route('pengiriman.show', $pengiriman->id) }}">Review</a>
+                            <a class="btn btn-sm btn-primary" href="{{ route('pengiriman.edit', $pengiriman->id) }}">Edit</a>
+                            <form action="{{ route('pengiriman.destroy', $pengiriman->id) }}" method="POST" style="display: inline-block">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
-</table>
-                        </div>
-                    </div>
+</div>
                 </main>
                 <!-- footer -->
                 <footer class="py-4 bg-light mt-auto">
