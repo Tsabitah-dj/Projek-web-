@@ -33,7 +33,7 @@
   <!-- Edit -->
    <section class="container mt-5">
     <h2>Edit Pesanan</h2>
-    <form action="{{ route('pesanan.update', $pesanan->id) }}" method="POST">
+<form action="{{ route('lacak.update', $pesanan->id) }}" method="POST">
       @csrf
       @method('PUT')
 
@@ -43,7 +43,7 @@
       </div>
 
       <div class="mb-3">
-        <label for="nama_barang" class="form-label">Nama Barang</label>
+        <label for="nama_barang" class="form-label">Nama Barang/Jumlah</label>
         <input type="text" class="form-control" id="nama_barang" name="nama_barang" value="{{ old('nama_barang', $pesanan->nama_barang) }}" required>
       </div>
 

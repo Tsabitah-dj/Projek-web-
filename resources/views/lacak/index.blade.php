@@ -34,13 +34,13 @@
     <section>
         <div class="container my-5">
             <h3>Data Pesanan</h3>
-            <a href="{{route('pesanan.index')}}" class="btn btn-success mb-3">Tambah Pesanan</a>
+           
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Nama Barang</th>
+                        <th>Nama Barang/Jumlah</th>
                         <th>Ukuran Barang</th>
-                        <th>Layanan ID</th>
+                        <th>Jenis Layanan</th>
                         <th>Alamat</th>
                         <th>Aksi</th>
                     </tr>
@@ -50,9 +50,10 @@
                     <tr>
                         <td>{{ $item->nama_barang }}</td>
                         <td>{{ $item->Ukuran }}</td>
-                        <td>{{ $item->layanan_id }}</td>
+                        <td>{{ $item->layanan->nama_layanan }}</td>
                         <td>{{ $item->alamat }}</td>
                         <td>
+                            <a href="{{ route('lacak.show', $item->id) }}" class="btn btn-sm btn-success">Review</a>
                             <a href="{{ route('lacak.edit', $item->id) }}" class="btn btn-sm btn-primary">Edit</a>
                             <form action="{{ route('lacak.destroy', $item->id) }}" method="POST" style="display:inline;">
                                 @csrf
@@ -63,7 +64,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="7" class="text-center">Nada Belum Membuat Pesanan</td>
+                        <td colspan="7" class="text-center">anda Belum Membuat Pesanan</td>
                     </tr>
                     @endforelse
                 </tbody>

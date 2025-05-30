@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\pengiriman;
 use App\Models\karyawan;
 use App\Models\barang; 
+use App\Models\layanan;
 use Illuminate\Http\Request;
 
 class PengirimanController extends Controller
@@ -25,7 +26,8 @@ class PengirimanController extends Controller
     public function create()
     {
         $barang = barang::all();
-        return view('Admin.pengiriman.create', compact( 'barang'));
+        $layanan = layanan::all();
+        return view('Admin.pengiriman.create', compact('barang', 'layanan'));
     }
 
     /**
@@ -36,16 +38,20 @@ class PengirimanController extends Controller
         // Validate the incoming request data
         $request->validate([
             'username' => 'required|string|max:255',
-            'barang_id' => 'required|exists:barang,id',
-            'jumlah' => 'required|integer|min:1',
+            'nama_barang' => 'required|string|max:255',
+            'nomor_telepon' => 'required|string|max:20',
+            'Ukuran' => 'required|in:Kecil,Sedang,Besar',
+            'layanan_id' => 'required|string|max:255',
             'alamat' => 'required|string|max:255',
         ]);
 
         // Create a new pengiriman instance
         $pengiriman = new pengiriman();
         $pengiriman->username = $request->username;
-        $pengiriman->barang_id = $request->barang_id;
-        $pengiriman->jumlah = $request->jumlah;
+        $pengiriman->nama_barang = $request->nama_barang;
+        $pengiriman->nomor_telepon = $request->nomor_telepon;
+        $pengiriman->Ukuran = $request->Ukuran;
+        $pengiriman->layanan_id = $request->layanan_id;
         $pengiriman->alamat = $request->alamat;
         $pengiriman->save();
 
@@ -92,15 +98,19 @@ class PengirimanController extends Controller
         if (Pengiriman::where('id', $id)->exists()){
         $request->validate([
             'username' => 'required|string|max:225',
-            'barang_id' => 'required|exists:barang,id',
-            'jumlah' => 'required|integer|min:1',
-            'alamat' => 'required|string|max:255',
+            'nama_barang' => 'required|string|max:255',
+            'nomor_telepon' => 'required|string|max:20',
+            'Ukuran' => 'required|in:1,2,3',
+            'layanan_id' => 'required|integer',
+            'alamat' => 'required|string',
         ]);
 
         // Update the existing pengiriman instance
         $pengiriman->username = $request->username;
-        $pengiriman->barang_id = $request->barang_id;
-        $pengiriman->jumlah = $request->jumlah;
+        $pengiriman->nama_barang = $request->nama_barang;
+        $pengiriman->nomor_telepon = $request->nomor_telepon;
+        $pengiriman->Ukuran = $request->Ukuran;
+        $pengiriman->layanan_id = $request->layanan_id;
         $pengiriman->alamat = $request->alamat;
 
         // Save the changes to the database
@@ -140,3 +150,5 @@ class PengirimanController extends Controller
         return redirect()->route('pengiriman.index')->with('success', 'Data pengiriman berhasil dihapus.');
     }
 }
+
+        

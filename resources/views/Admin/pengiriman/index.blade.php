@@ -51,7 +51,7 @@
                 <tr>
                     <th>No</th>
                     <th>Username</th>
-                    <th>Nama Barang</th>
+                    <th>Nama Barang/Jumlah</th>
                     <th>Nomer Telepon</th>
                     <th>Ukuran Barang</th>
                     <th>Layanan Yang Dipilih</th>
@@ -65,10 +65,10 @@
                     <tr>
                         <td>{{ $no++ }}</td>
                         <td>{{ $pengiriman->username }}</td>
-                        <td>{{ $pengiriman->barang?->nama_barang ?? 'Barang tidak tersedia' }}</td>
-                        <td>{{ $pengiriman->nomor_telepon ?? '-' }}</td>
-                        <td>{{ $pengiriman->ukuran_barang ?? '-' }}</td>
-                        <td>{{ $pengiriman->layanan ?? '-' }}</td>
+                        <td>{{ $pengiriman->nama_barang}}</td>
+                        <td>{{ $pengiriman->nomor_telepon}}</td>
+                        <td>{{ $pengiriman->Ukuran}}</td>
+                        <td>{{ $pengiriman->layanan->nama_layanan }}</td>
                         <td>{{ $pengiriman->alamat }}</td>
                         <td>
                             <a class="btn btn-sm btn-success" href="{{ route('pengiriman.show', $pengiriman->id) }}">Review</a>

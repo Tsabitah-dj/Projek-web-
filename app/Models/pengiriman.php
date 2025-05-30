@@ -17,6 +17,11 @@ class pengiriman extends Model
     {
         return $this->belongsTo('App\Models\barang');
     }
+
+    public function layanan()
+{
+    return $this->belongsTo(Layanan::class);
+}
 }
 
     

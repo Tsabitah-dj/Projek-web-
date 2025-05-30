@@ -46,7 +46,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Tambah Barang</h3></div>
                                     <div class="card-body">
                                     <form action="{{ route('pengiriman.store') }}" method="POST">
                                      @csrf
@@ -58,12 +57,27 @@
 
                                    <div class="mb-3">
                                        <label for="barang_id" class="form-label">Nama Barang</label>
-                                       <h5>{{ $pengiriman->barang->nama_barang }}</h5>
+                                       <h5>{{ $pengiriman->nama_barang }}</h5>
                                    </div>
 
                                   <div class="mb-3">
                                      <label for="jumlah" class="form-label">Jumlah Barang</label>
                                      <h5>{{ $pengiriman->jumlah }}</h5>
+                               </div>
+
+                               <div class="mb-3">
+                                   <label for="nomor_telepon" class="form-label">Nomer Telepon</label>
+                                   <h5>{{ $pengiriman->nomor_telepon }}</h5>
+                               </div>
+
+                               <div class="mb-3">
+                                   <label for="ukuran" class="form-label">Ukuran Barang</label>
+                                   <h5>{{ $pengiriman->Ukuran }}</h5>
+                               </div>
+
+                               <div class="mb-3">
+                                   <label for="layanan" class="form-label">Layanan Yang Dipilih</label>
+                                   <h5>{{ $pengiriman->layanan->nama_layanan }}</h5>
                                </div>
 
                               <div class="mb-3">

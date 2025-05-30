@@ -32,6 +32,7 @@ class PesananController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
+            'username' => 'required|string|max:255',
             'nama_barang' => 'required|string|max:255',
             'nomor_telepon' => 'required|string|max:20',
             'Ukuran' => 'required|in:1,2,3',
@@ -49,7 +50,8 @@ class PesananController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $pesanan = pengiriman::findOrFail($id);
+        return view('pesanan.show', compact('pesanan'));
     }
 
 
@@ -88,6 +90,9 @@ class PesananController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $pesanan = pengiriman::findOrFail($id);
+        $pesanan->delete();
+
+        return redirect()->route('lacak.index')->with('success', 'Pesanan berhasil dihapus.');
     }
 }

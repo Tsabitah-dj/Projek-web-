@@ -66,7 +66,7 @@
         <input type="text" class="form-control" id="username" name="username" required>
       </div>
       <div class="mb-3">
-        <label for="nama" class="form-label">Nama Barang</label>
+        <label for="nama" class="form-label">Nama Barang/Jumlah</label>
         <input type="text" class="form-control" id="nama_barang" name="nama_barang" required>
       </div>
       <div class="mb-3">

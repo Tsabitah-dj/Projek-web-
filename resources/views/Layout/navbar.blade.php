@@ -21,7 +21,7 @@
             <div class="cs_main_header_left">
               <div class="cs-logi-header-logo">
                 <a class="cs_site_branding" href="index-2.html">
-                  <img src="" alt="Logo" />
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" />
                 </a>
               </div>
             </div>
@@ -33,7 +33,7 @@
                 <ul class="cs_nav_list">
                   <li class="menu-item-has-children">
                     <a href="{{route('Dashboard')}}" class="cs-text_b_line"
-                      ><span>Pesan</span></a>
+                      ><span>Beranda</span></a>
                    
                     <span class="cs_munu_dropdown_toggle"></span>
                   </li>
