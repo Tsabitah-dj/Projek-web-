@@ -73,10 +73,7 @@
                     </ul>
                     <span class="cs_munu_dropdown_toggle"></span>
                   </li>
-                  <li>
-                    <a  href="login" onclick="return confirm('Anda Akan Logout')" class="cs-text_b_line"
-                      ><span>Logout</span></a>
-                  </li>
+                  
                 </ul>
               </div>
             </div>

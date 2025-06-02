@@ -31,15 +31,7 @@
   <!-- End Sidebar -->
 
   <!-- Start Preloader -->
-  <div id="logi-preloader">
-    <div id="cs-logi-preloader" class="cs-logi-preloader">
-      <div class="reveal-img-wrap">
-        <div class="preloader-img-inner">
-          <img src="assets/img/logi-preloader-logo.png" alt="LogiHub">
-        </div>
-      </div>
-     </div>
-  </div>
+ 
   <!-- End Preloader -->
 
 
