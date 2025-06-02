@@ -3,7 +3,7 @@
         <div class="cs-logi-copy-area">
           
           <div class="cs-footer-copy-text">
-            <p >© 2024 <a href="#">XI PPL-2,</a> All Rights Reserved.</p>
+            <p >© 2024 <a href="#">Perak EXpress,</a> All Rights Reserved.</p>
           </div>
         </div>
       </div>

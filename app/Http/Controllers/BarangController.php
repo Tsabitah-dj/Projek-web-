@@ -15,7 +15,7 @@ class BarangController extends Controller
         //
         $barang = Barang::all();
         return view('Admin.barang.index',['barang'=>$barang]);
-        return response()->json($barang);
+        
     }
 
     /**
@@ -44,9 +44,6 @@ class BarangController extends Controller
             'harga' => $request->harga,
         ]);
 
-        return response()->json([
-            "message" => "Data sudah ada"
-        ], 201);
 
         // Redirect to the index page with a success message
         return redirect()->route('barang.index')->with('success', 'Barang berhasil disimpan.');
@@ -74,7 +71,7 @@ class BarangController extends Controller
      */
     public function update(Request $request, barang $barang)
     {
-        if (Karyawan::where('id', $id)->exists()){
+       
         $request->validate([
             'nama_barang' => 'required|string|max:255',
             'harga' => 'required|integer',
@@ -85,34 +82,22 @@ class BarangController extends Controller
             'nama_barang' => $request->nama_barang,
             'harga' => $request->harga,
         ]);
-
-        return response()->json([
-            'message' => 'Data berhasil diperbarui'
-        ], 200);   
-    }else {
-        return response()->json([
-            'message' => 'Data tidak ditemukan'
-        ], 404);
-    }
+    
 
         // Redirect to the index page with a success message
         return redirect()->route('barang.index')->with('success', 'Barang berhasil diperbarui.');
     }
     public function destroy(barang $barang)
     {
-        if (Barang::where('id', $id)->exists()){
+        // Delete the barang record
         $barang->delete();
 
         // Redirect to the index page with a success message
         return redirect()->route('barang.index')->with('success', 'Barang berhasil dihapus.');
 
-        return response()->json([
-            'message' => 'Data berhasil dihapus'
-        ], 202);
-       }else{
-        return response()->json([
-            'message' => "Data tidak ditemukan"     
-        ], 404);
-       }
+        // Optionally, return a JSON response if needed
+        // return response()->json([
+        //     'message' => 'Data berhasil dihapus'
+        // ], 202);
     }
 }

@@ -14,7 +14,7 @@ class KaryawanController extends Controller
     {
         $karyawan = Karyawan::all();
         return view('Admin.karyawan.index', ['karyawan' => $karyawan]);
-        return response()->json($karyawan);
+      
     }
 
     /**
@@ -44,9 +44,7 @@ class KaryawanController extends Controller
             'jenis_kelamin.required' => 'Jenis kelamin tidak boleh kosong',
         ]);
         
-        return response()->json([
-            "message" => "Data sudah ada"
-        ], 201);
+       
 
         Karyawan::create($request->all());
         return redirect()->route('karyawan.index')->with('success', 'Karyawan berhasil ditambahkan');

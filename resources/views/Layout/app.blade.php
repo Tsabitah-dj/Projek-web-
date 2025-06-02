@@ -55,7 +55,7 @@
               <div class="cs-about-content-wrap">
                 <div class="cs-about-content-in">
                   <div class="cs-about-title">
-                    <h2 class="logi-splite">Selamat Datang Di Website Pengiriman Barang</h2>
+                    <h2 class="logi-splite">Selamat Datang Di Web Pengiriman Barang</h2>
                   </div>
                   <div class="cs-about-para">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero fuga fugit, sint sequi, laborum officia hic quae earum neque illo natus repellendus fugiat quidem. Architecto recusandae pariatur sed doloremque.</p>
@@ -151,7 +151,7 @@
                 <img src="assets/img/hero-slider-thumb-1.jpg" alt="LogiHub" class="hero-thumb" data-slide="1">
               </div>
               <div class="cs-hero-thumb-item">
-                <img src="assets/img/hero-slider-thumb-2.jpg" alt="LogiHub" class="hero-thumb" data-slide="2">
+                <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub" class="hero-thumb" data-slide="2">
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite"></h1>
+                    <h1 class="logi-splite">Website Pengiriman Barang</h1>
                   </div>
                  
                 </div>
@@ -174,12 +174,12 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite"></h1>
+                    <h1 class="logi-splite">Perak EXpress</h1>
                   </div>
                 
                 </div>
                 <div class="cs-hero-slider-img slider-image">
-                  <img src="assets/img/hero/home_1_hero_slider_3.jpg" alt="LogiHub">
+                  <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub">
                 </div>
               </div>
             </div>
