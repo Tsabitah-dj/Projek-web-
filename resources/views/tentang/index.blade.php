@@ -94,10 +94,17 @@
   <section>
     <div class="cs-blog-section-wrapper blog-style-1">
       <div class="cs-blog-content-container">
-        
-        
+
+
         <!-- Content Area -->
-        
+        <section>
+          <h2>Tentang web ini </h2>
+          <P>Di era modern ini, kebutuhan akan sistem logistik yang cepat, tepat, dan terintegrasi menjadi sangat penting.
+            Untuk menjawab tantangan tersebut, kami menghadirkan website logistik yang dirancang khusus untuk memudahkan proses pengiriman barang mulai dari pencatatan, pelacakan, hingga laporan a
+             Website ini dibangun sebagai solusi digital bagi perusahaan, UMKM, dan pengguna individu yang ingin mengelola logistik secara lebih terorganisir. Dengan antarmuka yang sederhana dan fitur yang lengkap, pengguna dapat dengan mudah membuat permintaan pengiriman, menggabungkan status barang secara real-time,</P>
+               <p>Web Ini Dibuat Oleh Yuzaki Dan Tsabitah Siswa Smkn 1 Garut Jurusan Pengembangan Perangkat Lunak Dan Gim (PPLG)</p>
+        </section>
+
   <!-- Start Blog-->
 
   <div class="cs-section-height"></div>
