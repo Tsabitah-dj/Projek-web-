@@ -40,8 +40,8 @@ class PengirimanController extends Controller
             'username' => 'required|string|max:255',
             'nama_barang' => 'required|string|max:255',
             'nomor_telepon' => 'required|string|max:20',
-            'Ukuran' => 'required|in:Kecil,Sedang,Besar',
-            'layanan_id' => 'required|string|max:255',
+            'Ukuran' => 'required|in:1,2,3',
+            'layanan' => 'required|string|max:255',
             'alamat' => 'required|string|max:255',
         ]);
 
@@ -51,13 +51,9 @@ class PengirimanController extends Controller
         $pengiriman->nama_barang = $request->nama_barang;
         $pengiriman->nomor_telepon = $request->nomor_telepon;
         $pengiriman->Ukuran = $request->Ukuran;
-        $pengiriman->layanan_id = $request->layanan_id;
+        $pengiriman->layanan = $request->layanan;
         $pengiriman->alamat = $request->alamat;
         $pengiriman->save();
-
-        return response()->json([
-            "message" => "Data sudah ada"
-        ], 201);
 
         // Redirect to index with success message
         return redirect()->route('pengiriman.index')->with('success', 'Data pengiriman berhasil disimpan.');
@@ -101,7 +97,7 @@ class PengirimanController extends Controller
             'nama_barang' => 'required|string|max:255',
             'nomor_telepon' => 'required|string|max:20',
             'Ukuran' => 'required|in:1,2,3',
-            'layanan_id' => 'required|integer',
+            'layanan' => 'required|string|max:225',
             'alamat' => 'required|string',
         ]);
 
@@ -110,7 +106,7 @@ class PengirimanController extends Controller
         $pengiriman->nama_barang = $request->nama_barang;
         $pengiriman->nomor_telepon = $request->nomor_telepon;
         $pengiriman->Ukuran = $request->Ukuran;
-        $pengiriman->layanan_id = $request->layanan_id;
+        $pengiriman->layanan = $request->layanan;
         $pengiriman->alamat = $request->alamat;
 
         // Save the changes to the database
@@ -135,19 +131,13 @@ class PengirimanController extends Controller
      */
     public function destroy(pengiriman $pengiriman)
     {
-        if (Pengiriman::where('id', $id)->exists()){
-        $pengiriman->delete();
+        if ($pengiriman) {
+            $pengiriman->delete();
 
-        return response()->json([
-            'message' => 'Data berhasil dihapus'
-        ], 202);
-       }else{
-        return response()->json([
-            'message' => "Data tidak ditemukan"     
-        ], 404);
-       }
-
-        return redirect()->route('pengiriman.index')->with('success', 'Data pengiriman berhasil dihapus.');
+            return redirect()->route('pengiriman.index')->with('success', 'Data pengiriman berhasil dihapus.');
+        } else {
+            return redirect()->route('pengiriman.index')->with('error', 'Data tidak ditemukan.');
+        }
     }
 }
 

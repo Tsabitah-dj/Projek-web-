@@ -63,7 +63,7 @@
 .cs_white_color,
 .cs-color-white,
 .cs_white_color_hover:hover {
-  color: #fff;
+  color: #e2dada;
 }
 
 .cs-color-black {
@@ -678,7 +678,7 @@ textarea {
     height: 5px;
     width: 5px;
     border-radius: 100%;
-    background: #fff;
+    background: #e7ecf0;
     margin-top: 5px;
     transition: all 0.4s ease;
   }
@@ -1148,7 +1148,7 @@ textarea {
     display: inline-block;
     height: 8px;
     width: 8px;
-    border: 1px solid #fff;
+    border: 1px solid #fafcff;
     transform: rotate(45deg);
     border-left: 0;
     border-top: 0;
@@ -1171,11 +1171,11 @@ textarea {
     display: block !important;
     border-radius: 10px;
     transition: all 0.1s ease;
-    color: #ECECEC;
+    color: #f6f9fc;
   }
   .cs_nav .cs_nav_list ul li:hover ul {
     top: 0px;
-    color: white;
+    color: rgb(246, 250, 252);
   }
   .cs_nav .cs_nav_list ul li:hover > ul {
     opacity: 1;
@@ -1188,7 +1188,7 @@ textarea {
     padding: 10px 5px 0px 20px;
   }
   .cs_nav .cs_nav_list ul a span {
-    color: #fff;
+    color: #eaecec;
   }
   .cs_nav .cs_nav_list ul ul {
     top: 15px;

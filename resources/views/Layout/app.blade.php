@@ -31,40 +31,56 @@
   <!-- End Sidebar -->
 
   <!-- Start Home_1 Slider -->
-  <!-- Start About Style 1 -->
   <section>
-    <div class="cs-about-wrapper-1">
-      <div class="cs-about-wrap-in">
-        <div class="container-fluid">
-          <div class="row cs_center">
-            <div class="col-xl-6 col-lg-12 col-md-12">
-              <div class="cs-about-img-area">
-                <div class="cs-about-img reveal-img-wrap horizontal">
-                  <div class="reveal-img-inner">
-                    <img src="assets/img/about-img-style-1.png" alt="LogiHub">
-                  </div>
-                </div>
-                <div class="cs-about-img-over-content anim_div_ShowRightSide" data-src="assets/img/experience-bg.svg">
-                  <div class="cs-flex">
+    <div class="cs-hero-slider-wrap cs-hero-home-1">
+      <div class="cs-hero-slider-content-wrap">
+        <div class="cs-hero-slider-instrument">
+          <div class="cs-hero-slider-controller">
+            <div class="slider-controler-item" data-slide="1">
+              <h6></h6>
+              <p></p>
+            </div>
+            <div class="slider-controler-item" data-slide="2">
+              <h6></h6>
+              <p></p>
+            </div>
+          </div>
+          <div class="cs-hero-slider-thumb">
+            <div class="cs-thumb-in">
+              
+              <div class="cs-hero-thumb-item">
+                <img src="assets/img/hero-slider-thumb-1.jpg" alt="LogiHub" class="hero-thumb" data-slide="1">
+              </div>
+              <div class="cs-hero-thumb-item">
+                <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub" class="hero-thumb" data-slide="2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-hero-slider-content">
+          <div class="swiper hero1-slider1">
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide cs_center">
+                <div class="cs-hero-slide-content">
+                  <div class="cs-hero-title">
+                    <h1 class="logi-splite">Selamat datang Di Web Pengiriman Barang</h1>
                   </div>
                  
                 </div>
+                <div class="cs-hero-slider-img slider-image">
+                  <img src="assets/img/hero/home_1_hero_slider_2.jpg" alt="LogiHub">
+                </div>
               </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12">
-              <div class="cs-about-content-wrap">
-                <div class="cs-about-content-in">
-                  <div class="cs-about-title">
-                    <h2 class="logi-splite">Selamat Datang Di Web Pengiriman Barang</h2>
+              <div class="swiper-slide cs_center">
+                <div class="cs-hero-slide-content">
+                  <div class="cs-hero-title">
+                    <h1 class="logi-splite">Perak EXpress</h1>
                   </div>
-                  <div class="cs-about-para">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero fuga fugit, sint sequi, laborum officia hic quae earum neque illo natus repellendus fugiat quidem. Architecto recusandae pariatur sed doloremque.</p>
-                  </div>
-                  <div class="cs-primary-btn-wrap">
-                    <div class="cs-primary-btn">
-                      <a href="about.html" class="cs-primary-btn-in"><span>Read More</span></a>
-                    </div>
-                  </div>
+                
+                </div>
+                <div class="cs-hero-slider-img slider-image">
+                  <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub">
                 </div>
               </div>
             </div>
@@ -74,7 +90,7 @@
     </div>
   </section>
   <!-- End Home_1 Slider -->
-
+ 
   <div class="cs-section-height"></div> <!-- Section to Section Gap -->
 
   <!-- Start Expertise Area Style 1 -->
@@ -129,57 +145,40 @@
   <div class="cs-section-height"></div> <!-- Section to Section Gap -->
 
   
-  <!-- Start Home_1 Slider -->
+  <!-- Start About Style 1 -->
   <section>
-    <div class="cs-hero-slider-wrap cs-hero-home-1">
-      <div class="cs-hero-slider-content-wrap">
-        <div class="cs-hero-slider-instrument">
-          <div class="cs-hero-slider-controller">
-            <div class="slider-controler-item" data-slide="1">
-              <h6></h6>
-              <p></p>
-            </div>
-            <div class="slider-controler-item" data-slide="2">
-              <h6></h6>
-              <p></p>
-            </div>
-          </div>
-          <div class="cs-hero-slider-thumb">
-            <div class="cs-thumb-in">
-              
-              <div class="cs-hero-thumb-item">
-                <img src="assets/img/hero-slider-thumb-1.jpg" alt="LogiHub" class="hero-thumb" data-slide="1">
-              </div>
-              <div class="cs-hero-thumb-item">
-                <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub" class="hero-thumb" data-slide="2">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-hero-slider-content">
-          <div class="swiper hero1-slider1">
-            <div class="swiper-wrapper">
-             
-              <div class="swiper-slide cs_center">
-                <div class="cs-hero-slide-content">
-                  <div class="cs-hero-title">
-                    <h1 class="logi-splite">Website Pengiriman Barang</h1>
+    <div class="cs-about-wrapper-1">
+      <div class="cs-about-wrap-in">
+        <div class="container-fluid">
+          <div class="row cs_center">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+              <div class="cs-about-img-area">
+                <div class="cs-about-img reveal-img-wrap horizontal">
+                  <div class="reveal-img-inner">
+                    <img src="assets/img/about-img-style-1.png" alt="LogiHub">
+                  </div>
+                </div>
+                <div class="cs-about-img-over-content anim_div_ShowRightSide" data-src="assets/img/experience-bg.svg">
+                  <div class="cs-flex">
                   </div>
                  
                 </div>
-                <div class="cs-hero-slider-img slider-image">
-                  <img src="assets/img/hero/home_1_hero_slider_2.jpg" alt="LogiHub">
-                </div>
               </div>
-              <div class="swiper-slide cs_center">
-                <div class="cs-hero-slide-content">
-                  <div class="cs-hero-title">
-                    <h1 class="logi-splite">Perak EXpress</h1>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12">
+              <div class="cs-about-content-wrap">
+                <div class="cs-about-content-in">
+                  <div class="cs-about-title">
+                    <h2 class="logi-splite">Perak EXpress</h2>
                   </div>
-                
-                </div>
-                <div class="cs-hero-slider-img slider-image">
-                  <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub">
+                  <div class="cs-about-para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero fuga fugit, sint sequi, laborum officia hic quae earum neque illo natus repellendus fugiat quidem. Architecto recusandae pariatur sed doloremque.</p>
+                  </div>
+                  <div class="cs-primary-btn-wrap">
+                    <div class="cs-primary-btn">
+                      <a href="#" class="cs-primary-btn-in"><span>Read More</span></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

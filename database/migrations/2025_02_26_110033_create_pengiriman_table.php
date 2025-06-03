@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('nomor_telepon');
             $table->string('nama_barang');
             $table->enum('Ukuran', ['Kecil','Sedang', 'Besar']);
-            $table->string('layanan_id');
+            $table->string('layanan');
             $table->text('alamat');
             $table->timestamps();
         });

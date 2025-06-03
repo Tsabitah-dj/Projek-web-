@@ -68,7 +68,7 @@
                         <td>{{ $pengiriman->nama_barang}}</td>
                         <td>{{ $pengiriman->nomor_telepon}}</td>
                         <td>{{ $pengiriman->Ukuran}}</td>
-                        <td>{{ $pengiriman->layanan->nama_layanan }}</td>
+                        <td>{{ $pengiriman->layanan }}</td>
                         <td>{{ $pengiriman->alamat }}</td>
                         <td>
                             <a class="btn btn-sm btn-success" href="{{ route('pengiriman.show', $pengiriman->id) }}">Review</a>

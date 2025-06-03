@@ -48,18 +48,13 @@
                 <tbody>
                     @forelse($pesanan as $item)
                     <tr>
+                        <td>{{ $item->username }}</td>
                         <td>{{ $item->nama_barang }}</td>
                         <td>{{ $item->Ukuran }}</td>
-                        <td>{{ $item->layanan->nama_layanan }}</td>
+                        <td>{{ $item->layanan }}</td>
                         <td>{{ $item->alamat }}</td>
                         <td>
                             <a href="{{ route('lacak.show', $item->id) }}" class="btn btn-sm btn-success">Review</a>
-                            <a href="{{ route('lacak.edit', $item->id) }}" class="btn btn-sm btn-primary">Edit</a>
-                            <form action="{{ route('lacak.destroy', $item->id) }}" method="POST" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</button>
-                            </form>
                         </td>
                     </tr>
                     @empty
@@ -73,4 +68,9 @@
     </section>
   <!-- Akhir Halaman -->
 
+<!-- Start Footer -->
+   @include('Layout.footer')
+  <!-- End Footer -->
+
 </body>
+</html>

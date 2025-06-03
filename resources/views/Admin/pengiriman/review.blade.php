@@ -77,7 +77,7 @@
 
                                <div class="mb-3">
                                    <label for="layanan" class="form-label">Layanan Yang Dipilih</label>
-                                   <h5>{{ $pengiriman->layanan->nama_layanan }}</h5>
+                                   <h5>{{ $pengiriman->layanan }}</h5>
                                </div>
 
                               <div class="mb-3">

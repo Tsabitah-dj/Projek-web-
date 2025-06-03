@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\pengiriman;
-use App\Models\layanan;
+use App\Models\Pengiriman;
+use App\Models\Layanan;
 
 class PesananController extends Controller
 {
@@ -13,9 +13,8 @@ class PesananController extends Controller
      */
     public function index()
     {
-        //
-        $layanan = layanan::all();
-        return view('pesanan.index', compact('layanan'));
+        $layanans = Layanan::all();
+        return view('pesanan.index', compact('layanans'));
     }
 
     /**
@@ -35,12 +34,12 @@ class PesananController extends Controller
             'username' => 'required|string|max:255',
             'nama_barang' => 'required|string|max:255',
             'nomor_telepon' => 'required|string|max:20',
-            'Ukuran' => 'required|in:1,2,3',
-            'layanan_id' => 'required|integer',
+            'ukuran' => 'required|in:Kecil,Sedang,Besar',
+            'layanan' => 'required|string|max:225',
             'alamat' => 'required|string',
         ]);
 
-        pengiriman::create($validatedData);
+        Pengiriman::create($validatedData);
 
         return redirect()->route('lacak.index')->with('success', 'Pesanan berhasil disimpan.');
     }
@@ -50,19 +49,18 @@ class PesananController extends Controller
      */
     public function show(string $id)
     {
-        $pesanan = pengiriman::findOrFail($id);
+        $pesanan = Pengiriman::findOrFail($id);
         return view('pesanan.show', compact('pesanan'));
     }
-
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
     {
-        $pesanan = pengiriman::findOrFail($id);
-        $layanans = layanan::all();
-        return view('lacak.edit', compact('pesanan', 'layanans'));
+        $pesanan = Pengiriman::findOrFail($id);
+        $layanans = Layanan::all();
+        return view('pesanan.edit', compact('pesanan', 'layanans'));
     }
 
     /**
@@ -72,17 +70,17 @@ class PesananController extends Controller
     {
         $validatedData = $request->validate([
             'username' => 'required|string|max:255',
-            'nomor_telepon' => 'required|integer',
+            'nomor_telepon' => 'required|string|max:20',
             'nama_barang' => 'required|string|max:255',
-            'Ukuran' => 'required|in:Kecil,Sedang,Besar',
-            'layanan_id' => 'required|string|max:255',
+            'ukuran' => 'required|in:Kecil,Sedang,Besar',
+            'layanan' => 'required|string|max:255',
             'alamat' => 'required|string',
         ]);
 
-        $pesanan = pengiriman::findOrFail($id);
+        $pesanan = Pengiriman::findOrFail($id);
         $pesanan->update($validatedData);
 
-        return redirect()->route('lacak.index')->with('success', 'Pesanan berhasil diperbarui.');
+        return redirect()->route('pesanan.index')->with('success', 'Pesanan berhasil diperbarui.');
     }
 
     /**
@@ -90,9 +88,9 @@ class PesananController extends Controller
      */
     public function destroy(string $id)
     {
-        $pesanan = pengiriman::findOrFail($id);
+        $pesanan = Pengiriman::findOrFail($id);
         $pesanan->delete();
 
-        return redirect()->route('lacak.index')->with('success', 'Pesanan berhasil dihapus.');
+        return redirect()->route('pesanan.index')->with('success', 'Pesanan berhasil dihapus.');
     }
 }

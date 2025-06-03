@@ -38,21 +38,18 @@
       </div>
       <div class="mb-3">
         <label for="Ukuran" class="form-label">Ukuran Barang</label>
-       <select class="form-select" name="Ukuran" id="Ukuran">
-  <option selected>select option</option>
+       <select class="form-select" name="Ukuran" id="Ukuran" required>
+  <option value="" selected>select option</option>
   <option value="1">Kecil</option>
   <option value="2">Medium</option>
   <option value="3">Besar</option>
 </select>
       </div>
       <div class="mb-3">
-        <label for="layanan" class="form-label">Layanan</label>
-      <select name="layanan_id" id="layanan_id" class="form-select" required>
-            <option value="">Select option</option>
-            @foreach($layanan as $layanan)
-            <option value="{{ $layanan->id }}">{{ $layanan->nama_layanan }}</option>
-            @endforeach
-            </select>
+       <div class="mb-3">
+        <label for="layanan" class="form-label">Layanan (Jalur Darat/Jalur Laut)</label>
+        <input type="text " class="form-control" id="layanan" name="layanan" required>
+      </div>
       </div>
       <div class="mb-3">
         <label for="alamat" class="form-label">Alamat</label>

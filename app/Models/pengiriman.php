@@ -10,7 +10,7 @@ class pengiriman extends Model
     use HasFactory;
     protected $table = 'pengiriman';
     protected $primarykey = 'id';
-    protected $fillable = ['username','nama_barang','nomor_telepon','Ukuran','layanan_id','alamat'];
+    protected $fillable = ['username','nama_barang','nomor_telepon','Ukuran','layanan','alamat'];
 
 
     public function barang()

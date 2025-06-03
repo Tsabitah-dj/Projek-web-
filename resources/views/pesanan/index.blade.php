@@ -11,13 +11,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Thememarch" />
   <!-- Favicon Icon -->
-  <link rel="icon" href="assets/img/favicon.svg" />
+  <link rel="icon" href="{{ asset('assets/img/favicon.svg') }}" />
   <!-- Site Title -->
   <title>Perak Express</title>
-  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/css/plugins/swiper.min.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/flaticon.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 
 <body>
@@ -43,7 +43,7 @@
               <div class="breadcrumb">
                 <ul class="cs_mp0">
                   <li>
-                    <a href="index-2.html" class="cs-text_b_line"><span>Home</span></a>
+                    <a href="{{ url('/') }}" class="cs-text_b_line"><span>Home</span></a>
                   </li>
                   <li>.</li>
                   <li>Tracking</li>
@@ -66,7 +66,7 @@
         <input type="text" class="form-control" id="username" name="username" required>
       </div>
       <div class="mb-3">
-        <label for="nama" class="form-label">Nama Barang/Jumlah</label>
+        <label for="nama" class="form-label">Nama Barang</label>
         <input type="text" class="form-control" id="nama_barang" name="nama_barang" required>
       </div>
       <div class="mb-3">
@@ -74,22 +74,17 @@
         <input type="text" class="form-control" id="nomor_telepon" name="nomor_telepon" required>
       </div>
       <div class="mb-3">
-        <label for="Ukuran" class="form-label">Ukuran Barang</label>
-       <select class="form-select" name="Ukuran" id="Ukuran">
-  <option selected>select option</option>
-  <option value="1">Kecil</option>
-  <option value="2">Medium</option>
-  <option value="3">Besar</option>
+        <label for="ukuran" class="form-label">Ukuran Barang</label>
+       <select class="form-select" name="ukuran" id="ukuran" required>
+  <option selected disabled>select option</option>
+  <option value="Kecil">Kecil</option>
+  <option value="Sedang">Sedang</option>
+  <option value="Besar">Besar</option>
 </select>
       </div>
       <div class="mb-3">
-        <label for="layanan" class="form-label">Layanan</label>
-      <select name="layanan_id" id="layanan_id" class="form-select" required>
-            <option value="">Select option</option>
-            @foreach($layanan as $layanan)
-            <option value="{{ $layanan->id }}">{{ $layanan->nama_layanan }}</option>
-            @endforeach
-            </select>
+        <label for="layanan" class="form-label">Layanan (Jalur Darat/Jalur Laut)</label>
+        <input type="text " class="form-control" id="layanan" name="layanan" required>
       </div>
       <div class="mb-3">
         <label for="alamat" class="form-label">Alamat</label>
@@ -110,11 +105,6 @@
   <!-- End Scrollup -->
 
   <!-- Script -->
-  <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
-  <script src="assets/js/plugins/swiper.min.js"></script>
-  <script src="assets/js/plugins/SplitText.min.js"></script>
-  <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-  <script src="assets/js/plugins/gsap.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+  <script src="{{ asset('assets/js/plugins/jquery-3.7.0.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/swiper.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugins/SplitText.min.js') }}"></script>
