@@ -4,9 +4,7 @@
         <div class="container-fluid">
           <div class="cs-topbar-container">
             <div class="cs-topbar-left">
-              <span class="cs-small-text cs-color-black"
-                >Projek Web Pengembangan Perangkat Lunak Dan Gim</span>
-          
+      
             </div>
           </div>
         </div>
@@ -20,8 +18,8 @@
             <!-- Start Main Header Left Area -->
             <div class="cs_main_header_left">
               <div class="cs-logi-header-logo">
-                <a class="cs_site_branding" href="index-2.html">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" />
+                 <a class="cs_site_branding" href="index-2.html">
+                <img src="{{ asset('assets/img/Logo 1.png') }}" alt="Logo" style="height: 80px;" />
                 </a>
               </div>
             </div>

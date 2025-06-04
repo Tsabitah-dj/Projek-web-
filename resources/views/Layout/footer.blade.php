@@ -1,9 +1,53 @@
-<footer>
+  <!-- Start Footer -->
+  <footer>
+    <div class="cs-logi-footer-container">
+      <div class="cs-logi-footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="cs-logi-cor-office cs-footer-widget">
+                <div class="cs-social-common">
+                  <h5 style="color: #FFFFFF;">Contact</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="flaticon-facebook-app-symbol"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="flaticon-linkedin-big-logo"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="flaticon-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="flaticon-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="cs-logi-copy-area">
-          
+          <div class="cs-footer-copy-branding">
+            <div class="cs-footer-copy-branding">
+              <a href="index-2.html">
+                <img src="assets/img/logo_white_text.png" alt="LogiHub" />
+              </a>
+              <span>Delivering Excellence in Global Logistics.</span>
+            </div>
+          </div>
           <div class="cs-footer-copy-text">
-            <p >© 2024 <a href="#">Perak EXpress,</a> All Rights Reserved.</p>
+            <p>© 2024 <a href="#">Thememarch.</a> All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -16,3 +60,4 @@
       </div>
     </div>
   </footer>
+  <!-- End Footer -->

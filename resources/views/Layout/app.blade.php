@@ -37,23 +37,12 @@
         <div class="cs-hero-slider-instrument">
           <div class="cs-hero-slider-controller">
             <div class="slider-controler-item" data-slide="1">
-              <h6></h6>
-              <p></p>
+              <h6>Delivering Excellence in Global Logistics.</h6>
+              <p>Glory-Glory</p>
             </div>
             <div class="slider-controler-item" data-slide="2">
               <h6></h6>
               <p></p>
-            </div>
-          </div>
-          <div class="cs-hero-slider-thumb">
-            <div class="cs-thumb-in">
-              
-              <div class="cs-hero-thumb-item">
-                <img src="assets/img/hero-slider-thumb-1.jpg" alt="LogiHub" class="hero-thumb" data-slide="1">
-              </div>
-              <div class="cs-hero-thumb-item">
-                <img src="assets/img/hero/ocean_hero_slider_1.jpg" alt="LogiHub" class="hero-thumb" data-slide="2">
-              </div>
             </div>
           </div>
         </div>
@@ -64,7 +53,7 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite">Selamat datang Di Web Pengiriman Barang</h1>
+                    <h1 class="logi-splite">Selamat Datang Di Web Pengiriman</h1>
                   </div>
                  
                 </div>
