@@ -13,7 +13,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/favicon.svg" />
   <!-- Site Title -->
-  <title>Perak Express</title>
+  <title>Delivery Express</title>
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
@@ -53,7 +53,7 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite">Selamat Datang Di Web Pengiriman</h1>
+                    <h1 class="logi-splite">Welcome In Shipping Website</h1>
                   </div>
                  
                 </div>
@@ -64,7 +64,7 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite">Perak EXpress</h1>
+                    <h1 class="logi-splite">Delivery Transportation</h1>
                   </div>
                 
                 </div>
@@ -158,7 +158,7 @@
               <div class="cs-about-content-wrap">
                 <div class="cs-about-content-in">
                   <div class="cs-about-title">
-                    <h2 class="logi-splite">Perak EXpress</h2>
+                    <h2 class="logi-splite">Delivery Express</h2>
                   </div>
                   <div class="cs-about-para">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero fuga fugit, sint sequi, laborum officia hic quae earum neque illo natus repellendus fugiat quidem. Architecto recusandae pariatur sed doloremque.</p>

@@ -13,7 +13,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="{{ asset('assets/img/favicon.svg') }}" />
   <!-- Site Title -->
-  <title>Perak Express</title>
+  <title>Delivery Express</title>
   <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/css/plugins/swiper.min.css') }}" />
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/fonts/flaticon.css') }}">

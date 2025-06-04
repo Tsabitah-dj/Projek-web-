@@ -2,55 +2,40 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
-class SessionController extends Controller
+class LoginController extends Controller
 {
-    public function index(){
+    public function showLoginForm()
+    {
         return view('login.index');
     }
-    
-    public function login(Request $request) {
-        if (Auth::check()) {
-            return redirect('')->return('dashboard')->with('success', 'Anda sudah login');
-        }
-        Session::flash('email', $request->email);
 
-        $request->validate([
-            'email' => 'required',
-            'password' => 'required',
-        ], [
-            'email.required' => 'Email Wajib Diisi',
-            'password.required' => 'Password Wajib Diisi',
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
         ]);
 
-        $request->validate([
-            'email' => 'required',
-            'password' => 'required',
-        ], [
-            'email.required' => 'Email Wajib Diisi',
-            'password.required' => 'Password Wajib Diisi',
-        ]);
-
-        $infologin = [
-            'email' => $request->email,
-            'password' => $request->password
-        ];
-
-        if (Auth::attempt($infologin)){
-            return redirect()->route('Dashboard')->with('success', 'Berhasil Login');
-        } else {
-            Session::flash('error', 'Email atau password salah');
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('dashboard')->with('success', 'Berhasil Login');
         }
+
+        return back()->withErrors([
+            'email' => 'Email atau password salah',
+        ])->onlyInput('email');
     }
-    
-    public function logout(){
+
+    public function logout(Request $request)
+    {
         Auth::logout();
-        return redirect('login.index')->with('success', 'Berhasil Logout');
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/login')->with('success', 'Berhasil Logout');
     }
 }

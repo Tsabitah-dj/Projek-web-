@@ -67,6 +67,10 @@
                           ><span>Tentang Kami</span></a
                         >
                       </li>
+
+                        <li class="menu-item-has-children">
+                          <a href="{{ url('/logout') }}" class="cs-text_b_line"><span>Logout</span></a>
+                        </li>
                     
                     </ul>
                     <span class="cs_munu_dropdown_toggle"></span>

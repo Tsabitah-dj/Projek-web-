@@ -13,7 +13,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/favicon.svg" />
   <!-- Site Title -->
-  <title>LogiHub - Logistic & Transportation</title>
+  <title>Delivery Express</title>
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />

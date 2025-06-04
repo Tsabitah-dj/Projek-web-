@@ -11,6 +11,7 @@ use App\Http\Controllers\LayananController;
 use App\Http\Controllers\lacakController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\PesananController;
+use App\Http\Controllers\CustomSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +49,10 @@ Route::prefix('admin')->group(function() {
     Route::get('transportasi', [Admincontroller::class, 'showTransportasi'])->name('transportasi.index');
 });
 
-Route::get('/login', [SessionController::class, 'index']);
+Route::get('/login', [CustomSessionController::class, 'index']);
+Route::post('/login', [CustomSessionController::class, 'login']);
+Route::get('/logout', [CustomSessionController::class, 'logout']);
+
 Route::get('sesi', [SessionController::class, 'index']);
 Route::post('sesi/login', [SessionController::class, 'login']);
-Route::get('/sesi/logout', [SessionController::class, 'logout']); 
+Route::get('/sesi/logout', [SessionController::class, 'logout']);
