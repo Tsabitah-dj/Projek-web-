@@ -53,7 +53,7 @@
               <div class="swiper-slide cs_center">
                 <div class="cs-hero-slide-content">
                   <div class="cs-hero-title">
-                    <h1 class="logi-splite">Welcome In Shipping Website</h1>
+                    <h1 class="logi-splite">selamat datang di web.</h1>
                   </div>
                  
                 </div>

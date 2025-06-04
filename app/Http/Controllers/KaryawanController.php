@@ -92,13 +92,13 @@ class KaryawanController extends Controller
             'jenis_kelamin.required' => 'Jenis kelamin tidak boleh kosong',
         ]);
 
-        return response()->json([
-            'message' => 'Data berhasil diperbarui'
-        ], 200);   
-    }else {
-        return response()->json([
-            'message' => 'Data tidak ditemukan'
-        ], 404);
+    //     return response()->json([
+    //         'message' => 'Data berhasil diperbarui'
+    //     ], 200);   
+    // }else {
+    //     return response()->json([
+    //         'message' => 'Data tidak ditemukan'
+    //     ], 404);
     }
 
         $karyawan->update($request->all());
@@ -119,13 +119,13 @@ class KaryawanController extends Controller
         $karyawan->delete();
         return redirect()->route('karyawan.index')->with('success', 'Karyawan berhasil dihapus');
 
-        return response()->json([
-            'message' => 'Data berhasil dihapus'
-        ], 202);
-       }else{
-        return response()->json([
-            'message' => "Data tidak ditemukan"     
-        ], 404);
+    //     return response()->json([
+    //         'message' => 'Data berhasil dihapus'
+    //     ], 202);
+    //    }else{
+    //     return response()->json([
+    //         'message' => "Data tidak ditemukan"     
+    //     ], 404);
        }
        
     }
